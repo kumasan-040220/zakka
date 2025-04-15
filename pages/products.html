@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="手作り雑貨のオンラインショップ。ナチュラルで温かみのある手作り雑貨の商品紹介ページです。"
+    />
+    <title>商品紹介 | zakka - 手作り雑貨のお店</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=M+PLUS+Rounded+1c:wght@300;400;500&family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .page-title {
+        background-color: #e8ede1;
+        padding: 60px 0;
+        text-align: center;
+        margin-bottom: 60px;
+      }
+
+      .page-title h1 {
+        font-size: 2.2rem;
+        color: #3c5233;
+        font-weight: 500;
+      }
+
+      .product-section {
+        padding: 40px 0;
+        border-bottom: 1px dashed #d2dbc8;
+      }
+
+      .product-section:last-child {
+        border-bottom: none;
+      }
+
+      .product-content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+      }
+
+      .product-images {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .product-images .main-image {
+        width: 100%;
+        height: 350px;
+        margin-bottom: 20px;
+      }
+
+      .image-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+      }
+
+      .image-gallery .image-placeholder {
+        height: 100px;
+        cursor: pointer;
+      }
+
+      .product-details {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .product-details h3 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        color: #3c5233;
+      }
+
+      .product-details p {
+        margin-bottom: 20px;
+        line-height: 1.7;
+      }
+
+      .product-price {
+        font-size: 1.4rem;
+        margin: 20px 0;
+        color: #5a7247;
+        font-weight: 500;
+      }
+
+      .product-features {
+        margin: 25px 0;
+      }
+
+      .product-features h4 {
+        margin-bottom: 10px;
+        color: #3c5233;
+      }
+
+      .product-features ul {
+        list-style: disc;
+        padding-left: 20px;
+        margin-bottom: 15px;
+      }
+
+      .product-features li {
+        margin-bottom: 8px;
+      }
+
+      .contact-btn {
+        margin-top: 30px;
+      }
+
+      @media (max-width: 768px) {
+        .product-content {
+          flex-direction: column;
+        }
+
+        .product-images,
+        .product-details {
+          width: 100%;
+        }
+
+        .page-title h1 {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="../index.html">
+            <img src="../assets/images/logo-placeholder.png" alt="zakka ロゴ" />
+          </a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="../index.html">トップ</a></li>
+            <li><a href="products.html">商品紹介</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-title">
+        <div class="container">
+          <h1>商品紹介</h1>
+          <p>一つひとつ心を込めて作られた手作り雑貨</p>
+        </div>
+      </section>
+
+      <div class="container">
+        <section id="candle" class="product-section">
+          <div class="product-content">
+            <div class="product-images">
+              <div
+                class="main-image image-placeholder"
+                style="background-color: #f5f5dc"
+              >
+                <p>メイン商品画像1</p>
+              </div>
+              <div class="image-gallery">
+                <div
+                  class="image-placeholder"
+                  style="background-color: #f5f5dc"
+                >
+                  <p>サブ画像1</p>
+                </div>
+                <div
+                  class="image-placeholder"
+                  style="background-color: #f5f5dc"
+                >
+                  <p>サブ画像2</p>
+                </div>
+                <div
+                  class="image-placeholder"
+                  style="background-color: #f5f5dc"
+                >
+                  <p>サブ画像3</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3>手作りキャンドル</h3>
+              <p>
+                自然の香りが広がる、優しい灯りのキャンドルです。素材にこだわり、ひとつひとつ手作業で作られています。リラックスしたいときや特別な時間に、心地よい香りと灯りをお楽しみください。
+              </p>
+              <div class="product-price">¥2,800（税込）</div>
+              <div class="product-features">
+                <h4>商品特徴</h4>
+                <ul>
+                  <li>天然素材100%使用</li>
+                  <li>オーガニックエッセンシャルオイル配合</li>
+                  <li>燃焼時間：約30時間</li>
+                  <li>ギフトボックス付き</li>
+                </ul>
+              </div>
+              <div class="contact-btn">
+                <a href="contact.html" class="btn">お問い合わせ</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="fabric" class="product-section">
+          <div class="product-content">
+            <div class="product-images">
+              <div
+                class="main-image image-placeholder"
+                style="background-color: #f5f5dc"
+              >
+                <p>メイン商品画像2</p>
+              </div>
+              <div class="image-gallery">
+                <div
+                  class="image-placeholder"
+                  style="background-color: #f5f5dc"
+                >
+                  <p>サブ画像1</p>
+                </div>
+                <div
+                  class="image-placeholder"
+                  style="background-color: #f5f5dc"
+                >
+                  <p>サブ画像2</p>
+                </div>
+                <div
+                  class="image-placeholder"
+                  style="background-color: #f5f5dc"
+                >
+                  <p>サブ画像3</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3>布小物</h3>
+              <p>
+                やさしい手触りの布で作られた、日常使いの小物です。肌に優しいオーガニックコットンを使用し、手縫いで丁寧に仕上げています。実用性とデザイン性を兼ね備えた、長く愛用できる布小物です。
+              </p>
+              <div class="product-price">¥1,500（税込）</div>
+              <div class="product-features">
+                <h4>商品特徴</h4>
+                <ul>
+                  <li>オーガニックコットン100%</li>
+                  <li>手縫いで丁寧に仕上げています</li>
+                  <li>洗濯機で洗えます（ネット使用）</li>
+                  <li>サイズ：約15cm×20cm</li>
+                </ul>
+              </div>
+              <div class="contact-btn">
+                <a href="contact.html" class="btn">お問い合わせ</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="stole" class="product-section">
+          <div class="product-content">
+            <div class="product-images">
+              <div
+                class="main-image image-placeholder"
+                style="background-color: #f5f5dc"
+              >
+                <p>メイン商品画像3</p>
+              </div>
+              <div class="image-gallery">
+                <div
+                  class="image-placeholder"
+                  style="background-color: #f5f5dc"
+                >
+                  <p>サブ画像1</p>
+                </div>
+                <div
+                  class="image-placeholder"
+                  style="background-color: #f5f5dc"
+                >
+                  <p>サブ画像2</p>
+                </div>
+                <div
+                  class="image-placeholder"
+                  style="background-color: #f5f5dc"
+                >
+                  <p>サブ画像3</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3>植物染めのストール</h3>
+              <p>
+                自然の色合いを楽しむことができる、手染めのストールです。植物由来の染料のみを使用し、一点一点、丁寧に染め上げています。季節の変わり目や冷房対策に、自然の優しい色合いをお楽しみください。
+              </p>
+              <div class="product-price">¥4,800（税込）</div>
+              <div class="product-features">
+                <h4>商品特徴</h4>
+                <ul>
+                  <li>天然コットン素材</li>
+                  <li>植物由来の染料のみ使用</li>
+                  <li>サイズ：約70cm×180cm</li>
+                  <li>手洗い推奨</li>
+                </ul>
+              </div>
+              <div class="contact-btn">
+                <a href="contact.html" class="btn">お問い合わせ</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="accessory" class="product-section">
+          <div class="product-content">
+            <div class="product-images">
+              <div
+                class="main-image image-placeholder"
+                style="background-color: #f5f5dc"
+              >
+                <p>メイン商品画像4</p>
+              </div>
+              <div class="image-gallery">
+                <div
+                  class="image-placeholder"
+                  style="background-color: #f5f5dc"
+                >
+                  <p>サブ画像1</p>
+                </div>
+                <div
+                  class="image-placeholder"
+                  style="background-color: #f5f5dc"
+                >
+                  <p>サブ画像2</p>
+                </div>
+                <div
+                  class="image-placeholder"
+                  style="background-color: #f5f5dc"
+                >
+                  <p>サブ画像3</p>
+                </div>
+              </div>
+            </div>
+            <div class="product-details">
+              <h3>天然素材のアクセサリー</h3>
+              <p>
+                木や石、貝殻などの天然素材を使ったアクセサリーです。自然が生み出す美しい形や色を活かし、シンプルなデザインに仕上げています。日常使いはもちろん、特別な日のアクセントにもぴったりです。
+              </p>
+              <div class="product-price">¥3,200（税込）〜</div>
+              <div class="product-features">
+                <h4>商品特徴</h4>
+                <ul>
+                  <li>天然素材使用</li>
+                  <li>金属部分はニッケルフリー</li>
+                  <li>ギフトボックス付き</li>
+                  <li>オーダーメイド可（お問い合わせください）</li>
+                </ul>
+              </div>
+              <div class="contact-btn">
+                <a href="contact.html" class="btn">お問い合わせ</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="../assets/images/logo-placeholder.png" alt="zakka ロゴ" />
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="../index.html">トップ</a></li>
+              <li><a href="products.html">商品紹介</a></li>
+              <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2023 zakka All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
